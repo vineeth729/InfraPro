@@ -1,0 +1,16 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Update package list
+      apt:
+        update_cache: yes
+
+    - name: Install JDK
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    - name: Install Maven
+      apt:
+        name: maven
+        state: present
