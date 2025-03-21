@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your-username/royal-hotel-devops.git'
+                git 'https://github.com/vineeth729/InfraPro.git'
             }
         }
 
